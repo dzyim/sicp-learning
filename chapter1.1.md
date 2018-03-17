@@ -1,5 +1,7 @@
 ## 1.1 The Elements of Programming
 
+（以下部分内容可能需要修改，因为根据定义，组合式（combinations）不包括特殊形式（special forms）。）
+
 ### Key concepts:
 - primitive expressions
 - means of combination
@@ -45,12 +47,12 @@ SICP书中把表达式分为「基本表达式」（primitive expressions）和�
 ;Abort!
 ```
 
-表达式包含不用进一步求值的「值」（Value）和需要进一步求值的「式」（Combination）。  
-式子的一般求值步骤是：  
+我们知道了表达式包含本身就是值的「基本表达式」和需要进一步求值的「复合表达式」。  
+组合式（combinations）是具有一般性的求值步骤的：  
 1. 先求每一个子表达式的值；  
 2. 然后把最左边的值作为运算符，把其他值作为运算对象，进行求值。  
 
-但特殊形式的式子其求值方式有所不同吧？  
+而每种特殊形式的式子则各有其不同的求值方式。  
 
 
 体会了上面的内容之后，让我们来看下面的表达式：  
